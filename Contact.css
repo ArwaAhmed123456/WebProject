@@ -1,0 +1,163 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Gradient Backgrounds */
+html,
+body {
+  height: 100%;
+  background: #FFF8E1;
+  color: #333;
+}
+
+/* Header & Breadcrumb Styling */
+.heading {
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #d1d1d1;
+  margin-top: 5px;
+}
+
+/* Main Contact Section */
+.contact {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 1200px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Icons Section */
+.icons-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  color: #333;
+}
+
+.icons i {
+  font-size: 24px;
+  color: #FFF8E1; /* Light Pink */
+  margin-bottom: 8px;
+}
+
+/* Contact Form Styling */
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+form {
+  background: #ffe0e6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  flex: 1 1 400px;
+  max-width: 500px;
+  width: 100%;
+  color: #333;
+}
+
+form h3 {
+  margin-bottom: 10px;
+  color: #ff6b81;
+}
+
+.inputBox {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.inputBox .box {
+  flex: 1 1 48%;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff6b81, #ff9a9e);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition:0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #ff9a9e, #ff6b81);
+}
+
+/* Map Image */
+.map {
+  flex: 1 1 400px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .icons-container {
+    gap: 10px;
+  }
+
+  .row {
+    gap: 10px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  .map {
+    max-height: 300px;
+  }
+}

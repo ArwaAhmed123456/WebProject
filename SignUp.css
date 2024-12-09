@@ -1,0 +1,103 @@
+/* General Page Styles */
+.sign-up-page {
+  background: #ffe0e6;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  margin: 0;
+}
+
+/* Header Section */
+.sign-up-page header {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Sign-Up Form Container */
+.sign-up-form {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px 30px;
+  width: 100%;
+  max-width: 400px;
+  color: #333;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Heading inside the form */
+.sign-up-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input fields */
+.sign-up-form input {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Button */
+.sign-up-form button {
+  width: 100%;
+  background: linear-gradient(135deg, #ff6b81, #ff9a9e);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.sign-up-form button:hover {
+  transform: scale(1.05);
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .sign-up-form {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .sign-up-form input {
+    padding: 8px 12px;
+  }
+
+  .sign-up-form button {
+    padding: 8px 12px;
+  }
+}

@@ -1,0 +1,133 @@
+/* Home Component Styles */
+.home {
+  font-family: Arial, sans-serif;
+  background: #FFF8E1; /* Soft Cream Background */
+  padding: 20px 10px;
+  min-height: 100vh;
+}
+
+/* Hero Image Styling */
+.hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
+}
+
+/* Section Title */
+.home h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #555;
+  margin: 20px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for Products */
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 10px auto;
+  max-width: 1200px;
+}
+
+/* Product Card */
+.product-card {
+  background: #ffffff;
+  border: 1px solid #DDDDDD;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: space-between; /* Space between items */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Product Text */
+.product-card h3 {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #555;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+  padding: 0 5px;
+}
+
+/* Buttons with Gradient & Styling */
+.btn {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #FFB6C1, #FF69B4);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease, transform 0.2s ease;
+  width: 80%; /* Button width */
+  margin-top: auto; /* Ensures it stays at the bottom */
+  text-align: center; /* Center text in button */
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #FF69B4, #FFB6C1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-image {
+    height: 300px;
+  }
+
+  .home h2 {
+    font-size: 24px;
+  }
+
+  .product-card img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-container {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card img {
+    height: 120px;
+  }
+
+  .home h2 {
+    font-size: 20px;
+  }
+}

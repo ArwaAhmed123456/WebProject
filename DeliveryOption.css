@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.delivery-container {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 30px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #f8f9fa;
+  transition: box-shadow 0.3s ease;
+}
+
+.delivery-container:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.delivery-title {
+  text-align: center;
+  color: #333;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Delivery Options Section */
+.delivery-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.delivery-options label {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.3s ease;
+  color: #555;
+}
+
+.delivery-options input[type="radio"] {
+  margin-right: 8px;
+}
+
+.delivery-options label:hover {
+  transform: scale(1.1);
+  color: #0056b3;
+}
+
+/* Billing Form */
+.billing-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.billing-form input[type="text"],
+.billing-form input[type="email"],
+.billing-form input[type="tel"] {
+  padding: 12px;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+.billing-form input[type="text"]:focus,
+.billing-form input[type="email"]:focus,
+.billing-form input[type="tel"]:focus {
+  border-color: #0056b3;
+  outline: none;
+  box-shadow: 0 0 5px #0056b3;
+}
+
+/* Confirm Button */
+button {
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: linear-gradient(135deg, #ff6b81, #ff9a9e);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover:not(:disabled) {
+  background-color: #003e7e;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #a0c4ff;
+  cursor: not-allowed;
+}
+
+/* Error & Confirmation Messages */
+.error-message {
+  color: #e74c3c;
+  text-align: center;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.confirmation-message {
+  color: #2ecc71;
+  text-align: center;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .delivery-options {
+    flex-direction: column;
+  }
+
+  .billing-form {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .delivery-container {
+    padding: 15px;
+  }
+
+  .delivery-title {
+    font-size: 2.2rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  .billing-form input[type="text"],
+  .billing-form input[type="email"],
+  .billing-form input[type="tel"] {
+    padding: 8px;
+  }
+}
